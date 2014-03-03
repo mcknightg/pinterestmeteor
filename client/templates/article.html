@@ -1,0 +1,18 @@
+<template name="article">
+	 
+	<div class="item well span4">
+		<iframe height="{{height}}" src="{{src}}"></iframe>
+		<hr>
+		<h4 class="muted">{{name}}</h4>
+		<p>{{description}}</p>
+		{{#if currentUser}}	  
+		<p>
+			<a href="#" class="like">
+				<img width="20px" src="likebtn.jpg" class="img-circle" alt="#" />
+			</a>
+			<span class="label label-info">{{numlikes}}</span> &nbsp;
+			<span class="badge badge-success">{{likethis}}</span>
+		</p>
+		{{/if}}	
+	 </div>
+</template>

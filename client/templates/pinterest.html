@@ -1,0 +1,13 @@
+<template name="pinterest">
+	
+	<input type="hidden" name="updated" value="{{updated}}" id="updated">
+	{{#if adding_interest}}
+	{{>addform}}
+	{{/if}}
+	<div id="gutter-opt-demo3" class="container-fluid">
+		{{#each articles}}
+		{{>article}}
+		{{else}}		 
+		{{/each}}
+		</div> 	
+</template>
